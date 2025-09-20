@@ -51,6 +51,20 @@
 - 稳定的网络连接
 - VPN服务商账号（可选）
 
+### 下载链接汇总
+
+#### 梅林固件下载
+- **KoolCenter下载**：[RT-AX86U PRO梅林固件](https://www.koolcenter.com/fw/device/rt-ax88u_pro/merlin)
+- **官方GitHub**：[梅林固件官方发布页](https://github.com/RMerl/asuswrt-merlin.ng/releases)
+
+#### Clash文件下载
+- **Telegram频道**：[撸猫云Clash文件](https://t.me/s/merlinclashfile)
+- **推荐版本**：MC_ARM64_250124.tar.gz（RT-AX86U PRO专用）
+
+#### 其他工具
+- **SSH客户端**：PuTTY（Windows）、Terminal（Mac/Linux）
+- **文件传输**：WinSCP（Windows）、FileZilla（跨平台）
+
 ## 🔧 硬件准备
 
 ### 华硕RT-AX86U PRO 详细规格
@@ -125,11 +139,23 @@
 - RT-AC68U
 
 #### 下载梅林固件
-1. 访问[梅林固件官网](https://www.asuswrt-merlin.net/)
-2. 选择对应型号的最新稳定版本
-3. 下载固件文件（.w格式）
 
-![固件下载页面](images/merlin-download.png)
+**方法一：通过KoolCenter下载（推荐）**
+1. 访问[KoolCenter梅林固件下载页面](https://www.koolcenter.com/fw/device/rt-ax88u_pro/merlin)
+2. 选择RT-AX86U PRO对应的固件版本
+3. 下载最新的稳定版本固件文件（.w格式）
+
+![KoolCenter固件下载页面](images/koolcenter-download.png)
+
+**方法二：通过官方GitHub下载**
+1. 访问[梅林固件官方GitHub](https://github.com/RMerl/asuswrt-merlin.ng/releases)
+2. 找到RT-AX86U PRO对应的固件版本
+3. 下载固件文件
+
+**固件版本选择建议：**
+- **稳定版**：适合日常使用，推荐新手选择
+- **测试版**：包含最新功能，适合高级用户
+- **开发版**：实验性功能，不推荐生产环境使用
 
 #### 备份当前设置
 ```bash
@@ -237,17 +263,73 @@ nvram show > /tmp/backup_config.txt
 
 #### 方法二：手动安装
 
-##### 下载Clash核心
+##### 下载Clash核心文件
+
+**通过Telegram频道下载（推荐）**
+1. 访问[撸猫云Clash文件频道](https://t.me/s/merlinclashfile)
+2. 根据您的路由器型号选择对应版本：
+   - **RT-AX86U PRO**: 下载 `MC_ARM64_250124.tar.gz` 或最新版本
+   - **其他ARM64路由器**: 下载 `MC2_0.5.1_ARM64.tar.gz`
+   - **ARM32路由器**: 下载 `MC2_0.5.1_ARM32.tar.gz`
+
+![Telegram Clash下载页面](images/telegram-clash-download.png)
+
+**支持的华硕路由器型号：**
+- **ARM64版本**：RT-AX86U PRO、RT-AX88U、RT-AX68U、RT-AC86U等
+- **ARM32版本**：RT-AX3000、RT-AX5400、RT-AX56U等
+
+##### 安装Clash文件
+
+**步骤1：上传文件到路由器**
+
+**方法A：通过Web界面上传**
+1. 进入路由器管理界面
+2. 进入"系统管理" → "文件管理"
+3. 上传下载的tar.gz文件到/tmp目录
+
+**方法B：通过SCP上传**
 ```bash
+# Windows用户使用WinSCP
+# Mac/Linux用户使用scp命令
+scp MC_ARM64_250124.tar.gz admin@192.168.1.1:/tmp/
+```
+
+**步骤2：解压和安装**
+```bash
+# SSH登录路由器
+ssh admin@192.168.1.1
+
 # 创建Clash目录
 mkdir -p /jffs/clash
 
-# 下载Clash Meta（推荐版本）
+# 解压文件
 cd /tmp
-wget https://github.com/MetaCubeX/Clash.Meta/releases/download/v1.18.0/clash.meta-linux-arm64-v1.18.0.gz
-gunzip clash.meta-linux-arm64-v1.18.0.gz
-mv clash.meta-linux-arm64-v1.18.0 /jffs/clash/clash
+tar -xzf MC_ARM64_250124.tar.gz
+
+# 查看解压后的文件结构
+ls -la clash/
+
+# 复制文件到Clash目录
+cp -r clash/* /jffs/clash/
+
+# 赋予执行权限
 chmod +x /jffs/clash/clash
+
+# 验证文件权限
+ls -la /jffs/clash/
+
+# 清理临时文件
+rm -rf /tmp/clash
+rm -f /tmp/MC_ARM64_250124.tar.gz
+```
+
+**步骤3：验证安装**
+```bash
+# 测试Clash是否可执行
+/jffs/clash/clash -v
+
+# 检查文件结构
+ls -la /jffs/clash/
 ```
 
 ##### 下载GeoIP数据库
@@ -785,49 +867,97 @@ crontab -e
 
 ## 🔧 故障排除
 
-### 1. 常见问题
+### 1. 下载和安装问题
 
-#### 问题1：Clash无法启动
+#### 问题1：无法下载梅林固件
+**症状**：访问KoolCenter或GitHub下载页面失败
+**解决方案**：
+1. 检查网络连接是否正常
+2. 尝试使用VPN或代理访问
+3. 使用备用下载链接
+4. 联系网络服务提供商
+
+#### 问题2：无法访问Telegram频道
+**症状**：无法打开[撸猫云Clash文件频道](https://t.me/s/merlinclashfile)
+**解决方案**：
+1. 确保已安装Telegram客户端
+2. 使用VPN或代理访问
+3. 尝试使用Telegram Web版本
+4. 联系频道管理员获取帮助
+
+#### 问题3：Clash文件解压失败
+**症状**：tar命令解压时出现错误
+**解决方案**：
+```bash
+# 检查文件完整性
+md5sum MC_ARM64_250124.tar.gz
+
+# 重新下载文件
+# 确保文件完整下载
+
+# 使用不同的解压参数
+tar -xzf MC_ARM64_250124.tar.gz -C /tmp/
+```
+
+#### 问题4：文件权限错误
+**症状**：Clash无法执行，提示权限不足
+**解决方案**：
+```bash
+# 检查文件权限
+ls -la /jffs/clash/clash
+
+# 重新设置权限
+chmod +x /jffs/clash/clash
+
+# 检查文件所有者
+chown root:root /jffs/clash/clash
+```
+
+### 2. 运行问题
+
+#### 问题5：Clash无法启动
 ```bash
 # 检查配置文件语法
-clash-meta -t -d /etc/clash
+/jffs/clash/clash -t -d /jffs/clash
 
 # 检查端口占用
 netstat -tlnp | grep 7890
 
 # 查看详细日志
-journalctl -u clash --no-pager
+tail -f /jffs/clash/clash.log
 ```
 
 **解决方案：**
 1. 检查配置文件YAML语法
 2. 确保端口未被占用
 3. 检查文件权限
+4. 验证Clash文件完整性
 
-#### 问题2：无法访问外网
+#### 问题6：无法访问外网
 ```bash
 # 检查DNS解析
-nslookup google.com 127.0.0.1
+nslookup google.com 192.168.1.1
 
 # 检查代理连接
 curl -x http://127.0.0.1:7890 http://www.google.com
 
 # 检查iptables规则
-iptables -t nat -L
+iptables -t nat -L CLASH
 ```
 
 **解决方案：**
 1. 检查DNS配置
 2. 验证代理节点可用性
 3. 检查防火墙规则
+4. 重启Clash服务
 
-#### 问题3：速度慢
+#### 问题7：速度慢
 ```bash
 # 测试节点延迟
 curl -o /dev/null -s -w "时间: %{time_total}s\n" http://www.google.com
 
 # 检查CPU使用率
-top -p $(pgrep clash-meta)
+top | grep clash
 
 # 检查内存使用
 free -h
@@ -837,6 +967,7 @@ free -h
 1. 更换更快的节点
 2. 调整并发连接数
 3. 优化路由器性能
+4. 检查网络带宽
 
 ### 2. 调试工具
 
@@ -1165,6 +1296,37 @@ rules:
 
 ---
 
+## 📝 版本更新说明
+
+### v2.0 (2024年1月)
+- ✅ 添加官方下载链接：[KoolCenter梅林固件](https://www.koolcenter.com/fw/device/rt-ax88u_pro/merlin)
+- ✅ 添加Telegram Clash文件下载：[撸猫云频道](https://t.me/s/merlinclashfile)
+- ✅ 优化华硕RT-AX86U PRO专用配置
+- ✅ 增加详细的文件上传和安装步骤
+- ✅ 完善故障排除指南
+- ✅ 添加性能优化建议
+
+### v1.0 (2024年1月)
+- ✅ 基础教程框架
+- ✅ 硬件介绍和推荐
+- ✅ 梅林固件刷机指南
+- ✅ Clash配置教程
+- ✅ 网络配置说明
+
+### 计划更新
+- 🔄 添加更多路由器型号支持
+- 🔄 增加视频教程链接
+- 🔄 优化配置文件模板
+- 🔄 添加自动化安装脚本
+
+---
+
 **最后更新**: 2024年1月  
-**版本**: v1.0  
+**版本**: v2.0  
 **作者**: Router VPN Team
+
+### 参考资源
+- [KoolCenter梅林固件下载](https://www.koolcenter.com/fw/device/rt-ax88u_pro/merlin)
+- [撸猫云Clash文件频道](https://t.me/s/merlinclashfile)
+- [梅林固件官方GitHub](https://github.com/RMerl/asuswrt-merlin.ng)
+- [Clash官方文档](https://clash.gitbook.io/)

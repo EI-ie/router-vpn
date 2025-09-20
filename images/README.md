@@ -11,7 +11,8 @@
 
 ### 2. 梅林固件刷机
 - `merlin-firmware.png` - 梅林固件界面截图
-- `merlin-download.png` - 固件下载页面截图
+- `koolcenter-download.png` - KoolCenter固件下载页面
+- `merlin-download.png` - 官方GitHub下载页面
 - `router-login.png` - 路由器登录界面
 - `backup-settings.png` - 设置备份界面
 - `firmware-upload.png` - 固件上传界面
@@ -23,8 +24,10 @@
 ### 3. Clash安装配置
 - `clash-interface.png` - Clash Web管理界面
 - `software-center-clash.png` - 软件中心Clash安装界面
+- `telegram-clash-download.png` - Telegram Clash文件下载页面
 - `clash-file-structure.png` - Clash文件结构图
 - `config-edit.png` - 配置文件编辑界面
+- `file-upload.png` - 文件上传界面
 
 ### 4. 网络配置
 - `startup-script.png` - 启动脚本配置界面
