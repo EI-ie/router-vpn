@@ -21,34 +21,26 @@
 - `firmware-version.png` - 固件版本确认界面
 - `software-center.png` - 软件中心界面
 
-### 3. Clash安装配置
-- `clash-interface.png` - Clash Web管理界面
-- `software-center-clash.png` - 软件中心Clash安装界面
-- `telegram-clash-download.png` - Telegram Clash文件下载页面
-- `clash-file-structure.png` - Clash文件结构图
-- `config-edit.png` - 配置文件编辑界面
-- `file-upload.png` - 文件上传界面
+### 3. MerlinClash安装配置
+- `clash-interface.png` - MerlinClash Web管理界面
+- `software-center-update.png` - 软件中心更新界面
+- `offline-install.png` - 离线安装界面
+- `merlinclash-start.png` - MerlinClash启动界面
+- `basic-config.png` - 基本配置界面
+- `subscription-config.png` - 订阅配置界面
+- `rules-config.png` - 规则配置界面
+- `status-check.png` - 状态检查界面
 
-### 4. 网络配置
-- `startup-script.png` - 启动脚本配置界面
-- `firewall-rules.png` - 防火墙规则配置界面
-- `dns-settings.png` - DNS设置界面
-- `clash-running.png` - Clash运行状态界面
-- `network-test.png` - 网络连接测试结果
-
-### 5. 高级功能
-- `smart-routing.png` - 智能分流配置界面
-- `game-acceleration.png` - 游戏加速配置
-- `streaming-unlock.png` - 流媒体解锁配置
-- `ad-blocking.png` - 广告屏蔽配置
-
-### 6. 监控维护
+### 4. 高级功能
+- `game-acceleration.png` - 游戏加速配置界面
+- `streaming-unlock.png` - 流媒体解锁配置界面
+- `ad-blocking.png` - 广告屏蔽配置界面
 - `status-monitoring.png` - 状态监控界面
-- `traffic-stats.png` - 流量统计图表
-- `log-viewer.png` - 日志查看器界面
+- `log-viewer.png` - 日志查看界面
 - `performance-monitor.png` - 性能监控界面
+- `log-analysis.png` - 日志分析界面
 
-### 7. 故障排除
+### 5. 故障排除
 - `troubleshooting-flow.png` - 故障排除流程图
 - `debug-tools.png` - 调试工具界面
 - `error-codes.png` - 错误代码对照表
