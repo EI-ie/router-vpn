@@ -1,58 +1,99 @@
-# 图片资源说明
+# 华硕路由器Clash翻墙教程图片资源
 
-本目录包含路由器Clash翻墙教程的相关图片资源。
+本目录包含华硕RT-AX86U PRO路由器Clash翻墙教程的相关图片资源。
 
 ## 图片列表
 
-### 1. 硬件推荐
-- `router-comparison.png` - 路由器型号对比图
-- `hardware-requirements.png` - 硬件配置要求图
+### 1. 硬件介绍
+- `asus-rt-ax86u-pro.png` - 华硕RT-AX86U PRO路由器外观图
+- `router-specs.png` - 路由器详细规格对比表
+- `hardware-comparison.png` - 不同品牌路由器对比图
 
-### 2. 固件刷机
-- `firmware-types.png` - 固件类型对比
-- `flash-process.png` - 刷机流程图
-- `web-interface.png` - Web界面刷机截图
+### 2. 梅林固件刷机
+- `merlin-firmware.png` - 梅林固件界面截图
+- `merlin-download.png` - 固件下载页面截图
+- `router-login.png` - 路由器登录界面
+- `backup-settings.png` - 设置备份界面
+- `firmware-upload.png` - 固件上传界面
+- `flash-progress.png` - 刷机进度显示
+- `factory-reset.png` - 恢复出厂设置界面
+- `firmware-version.png` - 固件版本确认界面
+- `software-center.png` - 软件中心界面
 
-### 3. Clash配置
-- `clash-interface.png` - Clash Web界面
-- `config-structure.png` - 配置文件结构图
-- `proxy-groups.png` - 代理组配置界面
+### 3. Clash安装配置
+- `clash-interface.png` - Clash Web管理界面
+- `software-center-clash.png` - 软件中心Clash安装界面
+- `clash-file-structure.png` - Clash文件结构图
+- `config-edit.png` - 配置文件编辑界面
 
 ### 4. 网络配置
-- `network-topology.png` - 网络拓扑图
-- `dns-config.png` - DNS配置界面
-- `firewall-rules.png` - 防火墙规则配置
+- `startup-script.png` - 启动脚本配置界面
+- `firewall-rules.png` - 防火墙规则配置界面
+- `dns-settings.png` - DNS设置界面
+- `clash-running.png` - Clash运行状态界面
+- `network-test.png` - 网络连接测试结果
 
 ### 5. 高级功能
-- `smart-routing.png` - 智能分流示意图
+- `smart-routing.png` - 智能分流配置界面
 - `game-acceleration.png` - 游戏加速配置
 - `streaming-unlock.png` - 流媒体解锁配置
+- `ad-blocking.png` - 广告屏蔽配置
 
 ### 6. 监控维护
 - `status-monitoring.png` - 状态监控界面
-- `traffic-stats.png` - 流量统计图
-- `log-viewer.png` - 日志查看器
+- `traffic-stats.png` - 流量统计图表
+- `log-viewer.png` - 日志查看器界面
+- `performance-monitor.png` - 性能监控界面
 
 ### 7. 故障排除
 - `troubleshooting-flow.png` - 故障排除流程图
 - `debug-tools.png` - 调试工具界面
 - `error-codes.png` - 错误代码对照表
+- `network-diagnostics.png` - 网络诊断工具
+
+## 图片说明
+
+### 华硕路由器特色
+- 所有截图均基于华硕RT-AX86U PRO路由器
+- 界面风格统一，符合华硕官方设计
+- 操作步骤详细，适合新手用户
+
+### 梅林固件特色
+- 基于华硕官方固件的增强版本
+- 保留所有官方功能，增加更多选项
+- 支持软件中心和自定义脚本
+
+### Clash配置特色
+- 专为路由器环境优化的配置
+- 支持透明代理和智能分流
+- 包含游戏加速和流媒体解锁功能
 
 ## 使用说明
 
 这些图片用于：
-1. 教程文档中的插图说明
-2. 配置界面的截图展示
-3. 网络拓扑的可视化说明
-4. 故障排除的流程图解
+1. 教程文档中的步骤说明
+2. 华硕路由器界面截图展示
+3. 梅林固件功能演示
+4. Clash配置过程图解
+5. 故障排除的视觉指导
 
 ## 图片格式
 
-- 主要使用PNG格式，支持透明背景
-- 截图使用JPG格式，文件更小
-- 流程图使用SVG格式，支持缩放
+- **截图**: PNG格式，保持清晰度
+- **流程图**: SVG格式，支持缩放
+- **界面图**: JPG格式，文件较小
+- **对比图**: PNG格式，支持透明背景
 
 ## 更新记录
 
-- 2024-01-01: 初始版本，包含基础配置图片
-- 后续会根据教程内容更新添加更多图片
+- 2024-01-01: 初始版本，包含华硕路由器基础图片
+- 2024-01-02: 添加梅林固件刷机相关图片
+- 2024-01-03: 添加Clash配置和网络设置图片
+- 后续会根据教程内容持续更新
+
+## 参考来源
+
+- 华硕官方产品图片
+- 梅林固件官方截图
+- Clash官方文档截图
+- 实际配置过程截图
