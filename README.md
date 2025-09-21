@@ -65,29 +65,8 @@
 
 ## 🔧 硬件准备
 
-### 华硕RT-AX86U PRO 详细规格
 
-![华硕RT-AX86U PRO](images/asus-rt-ax86u-pro.png)
-
-| 规格项目 | 详细参数 | 说明 |
-|---------|---------|------|
-| **处理器** | 博通四核1.8GHz | 强大的处理性能，支持高并发连接 |
-| **内存** | 1GB DDR4 | 充足内存支持Clash运行 |
-| **存储** | 256MB Flash | 大容量存储，支持安装更多插件 |
-| **无线性能** | Wi-Fi 6 (802.11ax) | 双频并发5700Mbps |
-| **有线接口** | 1×2.5G WAN + 4×1G LAN | 高速网络连接 |
-| **USB接口** | 2×USB 3.0 | 支持外接存储设备 |
-| **价格区间** | 800-1000元 | 性价比极高的高端路由器 |
-
-### 为什么选择RT-AX86U PRO？
-
-1. **性能强劲**：四核1.8GHz处理器，1GB内存，运行Clash毫无压力
-2. **梅林固件支持**：完美支持第三方梅林固件，功能丰富
-3. **稳定性好**：华硕品质保证，长期运行稳定
-4. **扩展性强**：支持多种插件和自定义功能
-5. **性价比高**：相比其他品牌同配置产品价格更实惠
-
-### 其他推荐路由器型号
+### 推荐路由器型号
 
 | 品牌 | 型号 | CPU | 内存 | 存储 | 价格区间 | 推荐指数 | 备注 |
 |------|------|-----|------|------|----------|----------|------|
@@ -104,6 +83,30 @@
 - **存储**: 128MB Flash 或更多（推荐256MB+）
 - **网络**: 千兆以太网接口
 - **固件支持**: 支持第三方固件（梅林/OpenWrt）
+
+### 华硕RT-AX86U PRO 详细规格
+
+![华硕RT-AX86U PRO](images/asus-rt-ax86u-pro.png)
+
+| 规格项目 | 详细参数 | 说明 |
+|---------|---------|------|
+| **处理器** | 博通四核1.8GHz | 强大的处理性能，支持高并发连接 |
+| **内存** | 1GB DDR4 | 充足内存支持Clash运行 |
+| **存储** | 256MB Flash | 大容量存储，支持安装更多插件 |
+| **无线性能** | Wi-Fi 6 (802.11ax) | 双频并发5700Mbps |
+| **有线接口** | 1×2.5G WAN + 4×1G LAN | 高速网络连接 |
+| **USB接口** | 2×USB 3.0 | 支持外接存储设备 |
+| **价格区间** | 800-1000元 | 性价比极高的高端路由器 |
+> **京东购买推荐**：[京东自营RT-AX86U PRO路由器优惠购买链接](https://union-click.jd.com/jdc?e=618%7Cpc%7C&p=JF8BAS8JK1olXwABU19YDUgeA18IGloUXwAKVFlbC08nRzBQRQQlBENHFRxWFlVPRjtUBABAQlRcCEBdCUoWAWkAG1wTXgIdDRsBVXt_dCR_SBxKLmMDBBgKFk9XfzNvYV9TUQoyVW5eCUsTAWkJHVkTbTYCU24OZhtVRy3RncXD-IbW_MdtCXsXBWsBHlgVWgMCUltVOEwXCl9YQxlMDVlUHRoJOHsnAF8PG1IBW3RDBkpbensnA18LK1sUXQcLVF9eDE8WH28MGVoSVRoCUlpUDUgXB2oOHV8cbQQDVVpUOHvJjt92a1pLHXNiHBs5CElDdwYJxdalTHp1XVxfDFonWChjbD50WQ9YMiEEQC4VRypTGyBDXXJiOlxZC09XVTR7fAFyGVBiVjspSXsSM2gOGms)  
+> 通过此链接购买可支持本项目持续更新，感谢支持！
+
+### 为什么选择RT-AX86U PRO？
+
+1. **性能强劲**：四核1.8GHz处理器，1GB内存，运行Clash毫无压力
+2. **梅林固件支持**：完美支持第三方梅林固件，功能丰富
+3. **稳定性好**：华硕品质保证，长期运行稳定
+4. **扩展性强**：支持多种插件和自定义功能
+5. **性价比高**：相比其他品牌同配置产品价格更实惠
 
 ## 🔄 梅林固件刷机
 
