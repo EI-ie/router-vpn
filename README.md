@@ -327,7 +327,7 @@
 
 #### 申请clash订阅
 
-查看教程：[申请 Clash 订阅指南](https://mowei-ie.github.io/router-vpn/clash-subscription-guide.html)
+查看教程：[申请 Clash 订阅指南](https://mowei-ie.github.io/router-vpn/clash-subscription-guide.html){:target="_blank"}
 
 
 #### 订阅配置
