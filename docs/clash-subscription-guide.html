@@ -7,18 +7,18 @@
   <meta name="description" content="一步步教你申请 Clash 订阅，并导入到 MerlinClash。" />
   <style>
     :root{
-      --bg-start:#0f0c29; /* deep indigo */
-      --bg-mid:#302b63;   /* royal purple */
-      --bg-end:#24243e;   /* space purple */
-      --card:#111320;
-      --text:#e8ecff;
-      --muted:#a7b0d4;
+      --bg-start:#f7f8fc; /* light background start */
+      --bg-mid:#eef1f7;   /* light background mid */
+      --bg-end:#ffffff;   /* light background end */
+      --card:#ffffff;
+      --text:#0f172a;     /* near-black */
+      --muted:#475569;    /* slate */
       --brand:#7c4dff;    /* violet */
-      --accent:#00e5ff;   /* cyan */
-      --success:#00d4a6;  /* teal */
-      --warn:#ffc107;     /* amber */
-      --danger:#ff5252;   /* red */
-      --shadow: 0 10px 30px rgba(0,0,0,.4), inset 0 0 0 1px rgba(255,255,255,.04);
+      --accent:#0ea5e9;   /* sky */
+      --success:#10b981;  /* emerald */
+      --warn:#f59e0b;     /* amber */
+      --danger:#ef4444;   /* red */
+      --shadow: 0 6px 16px rgba(17,24,39,.08), inset 0 0 0 1px rgba(17,24,39,.04);
     }
     *{box-sizing:border-box}
     html,body{height:100%}
@@ -26,8 +26,8 @@
       margin:0;
       font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Microsoft YaHei", "Noto Sans CJK", "PingFang SC", sans-serif;
       color:var(--text);
-      background: radial-gradient(1200px 600px at 10% 0%, rgba(124,77,255,.16), transparent 60%),
-                  linear-gradient(135deg, var(--bg-start) 0%, var(--bg-mid) 40%, var(--bg-end) 100%);
+      background: radial-gradient(1000px 500px at 10% 0%, rgba(14,165,233,.12), transparent 60%),
+                  linear-gradient(135deg, var(--bg-start) 0%, var(--bg-mid) 60%, var(--bg-end) 100%);
       background-attachment: fixed;
     }
     .container{max-width:1080px;margin:0 auto;padding:40px 24px 80px}
@@ -42,9 +42,9 @@
 
     .hero{
       margin-top:18px;margin-bottom:28px;padding:18px 18px 16px;border-radius:16px;
-      background: linear-gradient(180deg, rgba(124,77,255,.12), rgba(0,229,255,.08));
+      background: linear-gradient(180deg, rgba(124,77,255,.08), rgba(14,165,233,.06));
       box-shadow: var(--shadow);
-      border:1px solid rgba(255,255,255,.08);
+      border:1px solid rgba(0,0,0,.06);
     }
     .hero a{color:var(--accent);text-decoration:none;border-bottom:1px dashed rgba(0,229,255,.5)}
 
@@ -54,11 +54,11 @@
     @media(min-width:860px){.col-6{grid-column:span 6}}
 
     .card{
-      background:linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
-      border:1px solid rgba(255,255,255,.08); border-radius:16px; padding:18px; box-shadow:var(--shadow);
+      background:var(--card);
+      border:1px solid rgba(0,0,0,.08); border-radius:16px; padding:18px; box-shadow:var(--shadow);
       transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
     }
-    .card:hover{transform:translateY(-4px);border-color:rgba(0,229,255,.35);box-shadow:0 12px 34px rgba(0,229,255,.15), inset 0 0 0 1px rgba(255,255,255,.06)}
+    .card:hover{transform:translateY(-4px);border-color:rgba(14,165,233,.45);box-shadow:0 12px 34px rgba(14,165,233,.15), inset 0 0 0 1px rgba(17,24,39,.03)}
     .kicker{letter-spacing:.12em;text-transform:uppercase;color:var(--accent);font-size:12px}
     .card h3{margin:6px 0 10px;font-size:20px}
     .badge{display:inline-block;font-size:12px;padding:4px 8px;border-radius:999px;background:rgba(124,77,255,.18);border:1px solid rgba(124,77,255,.35);color:#e9deff;margin-right:8px}
@@ -68,15 +68,15 @@
     .btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
     .btn{
       display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:12px;
-      background:linear-gradient(135deg, rgba(0,229,255,.16), rgba(124,77,255,.16));
-      color:var(--text);text-decoration:none;border:1px solid rgba(255,255,255,.1);
+      background:linear-gradient(135deg, rgba(14,165,233,.12), rgba(124,77,255,.12));
+      color:var(--text);text-decoration:none;border:1px solid rgba(0,0,0,.08);
       transition: all .25s ease;
     }
-    .btn:hover{box-shadow:0 10px 24px rgba(124,77,255,.25);transform:translateY(-2px);border-color:rgba(0,229,255,.4)}
-    .btn.secondary{background:linear-gradient(135deg, rgba(255,255,255,.06), rgba(255,255,255,.03))}
+    .btn:hover{box-shadow:0 10px 24px rgba(14,165,233,.2);transform:translateY(-2px);border-color:rgba(14,165,233,.45)}
+    .btn.secondary{background:linear-gradient(135deg, rgba(0,0,0,.04), rgba(0,0,0,.02))}
 
-    .callout{margin-top:18px;padding:14px;border-radius:14px;border:1px dashed rgba(255,255,255,.18);background:rgba(255,255,255,.04);color:#e8f9ff}
-    code.inline{padding:.15em .45em;border-radius:.5em;background:rgba(0,0,0,.35);border:1px solid rgba(255,255,255,.1)}
+    .callout{margin-top:18px;padding:14px;border-radius:14px;border:1px dashed rgba(0,0,0,.14);background:rgba(0,0,0,.03);color:var(--text)}
+    code.inline{padding:.15em .45em;border-radius:.5em;background:rgba(0,0,0,.06);border:1px solid rgba(0,0,0,.12)}
 
     footer{margin-top:28px;color:var(--muted);font-size:13px}
     footer a{color:var(--accent);text-decoration:none}
@@ -115,7 +115,7 @@
               <td style="padding:10px 8px">扬帆云</td>
               <td style="padding:10px 8px">性价比、多地区</td>
               <td style="padding:10px 8px">影音解锁/日常通勤</td>
-              <td style="padding:10px 8px">¥15–60（参考）</td>
+              <td style="padding:10px 8px">¥15.99–88.99（参考）</td>
             </tr>
             <tr style="border-bottom:1px dashed rgba(255,255,255,.08)">
               <td style="padding:10px 8px">大哥云</td>
@@ -135,97 +135,77 @@
       <div class="callout" style="margin-top:12px">说明：以上为常见区间，仅作参考，请以后续官网页实际标注为准。</div>
     </section>
 
-    <div class="grid">
-      <div class="col-6">
-        <article class="card">
-          <div class="kicker">Provider</div>
-          <h3>扬帆云</h3>
-          <span class="badge">多地区节点</span><span class="badge">性价比</span><span class="badge">Clash 订阅</span>
-          <p class="desc">支持多地区线路与一键订阅导入，适合注重性价比与解锁需求的用户。</p>
-          <ul class="steps">
-            <li>Clash 订阅（常见协议覆盖，具体以官网为准）</li>
-            <li>流媒体/ChatGPT：常见平台解锁（以套餐说明为准）</li>
-            <li>并发设备：2–5 台（以套餐为准）</li>
-            <li>售后支持：工单/社群（以官网为准）</li>
-          </ul>
-          <ul class="steps" style="margin-top:8px">
-            <li><strong>参考套餐（以官网为准）</strong></li>
-            <li>入门：¥15–25/月 · 100–200GB · 2–3设备</li>
-            <li>标准：¥30–50/月 · 200–400GB · 3–4设备</li>
-            <li>进阶：¥60–100/月 · 600GB–不限制 · 4–5设备</li>
-          </ul>
-          <div class="btns">
-            <a class="btn" href="#" data-link="https://your-domain.example/yangfan" target="_blank" rel="noopener">前往官网（占位）</a>
-          </div>
-        </article>
+    <section class="card">
+      <div class="kicker">Provider</div>
+      <h3>扬帆云</h3>
+      <ul class="steps">
+        <li>定位/特点：性价比、多地区</li>
+        <li>参考价/月：¥15.99–88.99</li>
+        <li>流量（参考）：100–1200 GB</li>
+        <li>峰值速度：200–2000 Mbps</li>
+        <li>设备数：2–6 台</li>
+        <li>特性/说明：全球节点 · 流媒体解锁 · 年付7折码 618</li>
+      </ul>
+      <div class="callout" style="margin-top:8px">常规套餐默认每月订单日重置流量；当月未用流量不结转至下月。</div>
+      <div class="btns" style="margin-top:10px">
+        <a class="btn" href="#" data-link="https://yftg1.com/register?code=BnJcjUjE" target="_blank" rel="noopener">前往官网</a>
       </div>
+    </section>
 
-      <div class="col-6">
-        <article class="card">
-          <div class="kicker">Provider</div>
-          <h3>大哥云</h3>
-          <span class="badge">专线优化</span><span class="badge">稳定优先</span><span class="badge">Clash 订阅</span>
-          <p class="desc">强调稳定和延迟优化，适合远程办公/会议与常驻代理场景。</p>
-          <ul class="steps">
-            <li>Clash 订阅，常见提供订阅转换/短链</li>
-            <li>更侧重稳定低延迟与高峰期表现</li>
-            <li>并发设备：3–6 台（以套餐为准）</li>
-            <li>售后支持：工单/即时客服（以官网为准）</li>
-          </ul>
-          <ul class="steps" style="margin-top:8px">
-            <li><strong>参考套餐（以官网为准）</strong></li>
-            <li>基础：¥20–40/月 · 150–300GB · 2–3设备</li>
-            <li>专业：¥50–80/月 · 300–600GB · 3–5设备</li>
-            <li>旗舰：¥100+/月 · 大流量/峰值优先 · 5–6设备</li>
-          </ul>
-          <div class="btns">
-            <a class="btn" href="#" data-link="https://your-domain.example/dage" target="_blank" rel="noopener">前往官网（占位）</a>
-          </div>
-        </article>
+    <section class="card">
+      <div class="kicker">Provider</div>
+      <h3>大哥云</h3>
+      <ul class="steps">
+        <li>定位/特点：稳定优先、专线优化</li>
+        <li>版本：v1.7.4</li>
+        <li>参考价：月付 ¥19.90/29.90；季付 ¥69；年付 ¥88/199/299/699</li>
+        <li>流量（参考）：15–1000 GB/月</li>
+        <li>峰值速度：500–1000 Mbps</li>
+        <li>协议：Trojan</li>
+        <li>设备数：未标注</li>
+        <li>地区：新疆地区不可用</li>
+        <li>流量重置：订单日重置或购买/续费套餐重置</li>
+        <li>优惠：9折优惠券 mcuE8uOq</li>
+        <li>退款：不支持原路退款</li>
+      </ul>
+      <div class="btns" style="margin-top:10px">
+        <a class="btn" href="#" data-link="https://aff02.dgy02.com/#/register?code=1CAfWNQC" target="_blank" rel="noopener">前往官网</a>
       </div>
+    </section>
 
-      <div class="col-6">
-        <article class="card">
-          <div class="kicker">Provider</div>
-          <h3>三番云</h3>
-          <span class="badge">线路覆盖</span><span class="badge">便捷导入</span><span class="badge">Clash 订阅</span>
-          <p class="desc">覆盖多地区常用线路，提供标准 Clash 订阅地址，便于一键导入。</p>
-          <ul class="steps">
-            <li>Clash 订阅，常配合规则/策略组</li>
-            <li>注重使用便捷与多端覆盖</li>
-            <li>并发设备：2–5 台（以套餐为准）</li>
-            <li>售后支持：教程/社群（以官网为准）</li>
-          </ul>
-          <ul class="steps" style="margin-top:8px">
-            <li><strong>参考套餐（以官网为准）</strong></li>
-            <li>轻量：¥18–35/月 · 120–200GB · 2–3设备</li>
-            <li>标准：¥40–60/月 · 200–500GB · 3–4设备</li>
-            <li>进阶：¥70–80/月 · 500GB–不限制 · 4–5设备</li>
-          </ul>
-          <div class="btns">
-            <a class="btn" href="#" data-link="https://your-domain.example/sanfan" target="_blank" rel="noopener">前往官网（占位）</a>
-          </div>
-        </article>
+    <section class="card">
+      <div class="kicker">Provider</div>
+      <h3>三番云</h3>
+      <ul class="steps">
+        <li>定位/特点：覆盖全面、便捷导入</li>
+        <li>价格：￥15.88 / ￥21.88 / ￥31.88 / ￥45.88 / ￥78.88</li>
+        <li>流量（自动重置）：100GB / 200GB / 300GB / 700GB / 1200GB</li>
+        <li>峰值带宽：300Mbps / 300Mbps / 500Mbps / 1000Mbps / 2000Mbps</li>
+        <li>设备数：2台 / 3台 / 5台 / 8台 / 不限制</li>
+        <li>多国节点：10个国家高速接入，随心切换</li>
+        <li>解锁：全流媒体（Netflix、Disney+、Hulu 等）</li>
+        <li>AI & 游戏：ChatGPT 无障碍、游戏优化</li>
+        <li>专线：IPLC 低延迟，无丢包</li>
+        <li>售后：在线客服</li>
+        <li>购买说明：续购相同套餐叠加时长，换套餐按规则折抵</li>
+      </ul>
+      <div class="btns" style="margin-top:10px">
+        <a class="btn" href="#" data-link="https://3fan.3f66.net:?code=RbFFu3Pf" target="_blank" rel="noopener">前往官网</a>
       </div>
+    </section>
 
-      <div class="col-6">
-        <article class="card">
-          <div class="kicker">Checklist</div>
-          <h3>通用申请要点</h3>
-          <span class="badge" style="background:rgba(0,212,166,.18);border-color:rgba(0,212,166,.35)">建议</span>
-          <ul class="steps">
-            <li>优先选择支持 <strong>Clash 订阅</strong> 与 <strong>HTTPS</strong> 的机场。</li>
-            <li>留意是否提供「订阅转换/短链」与「流媒体解锁/ChatGPT」。</li>
-            <li>保存售后渠道（客服/工单/Telegram 群）。</li>
-            <li>订阅链接一般可在「我的订阅 / 账户 / 仪表盘」中找到。</li>
-            <li>导入后如节点为空，先在机场后台「重置订阅」再刷新。</li>
-          </ul>
-          <div class="btns">
-            <a class="btn secondary" href="#" target="_blank" rel="noopener">更多机场持续更新中（占位）</a>
-          </div>
-        </article>
-      </div>
-    </div>
+    <section class="card">
+      <div class="kicker">Checklist</div>
+      <h3>通用申请要点</h3>
+      <span class="badge" style="background:rgba(0,212,166,.18);border-color:rgba(0,212,166,.35)">建议</span>
+      <ul class="steps">
+        <li>优先选择支持 <strong>Clash 订阅</strong> 与 <strong>HTTPS</strong> 的机场。</li>
+        <li>留意是否提供「订阅转换/短链」与「流媒体解锁/ChatGPT」。</li>
+        <li>保存售后渠道（客服/工单/Telegram 群）。</li>
+        <li>订阅链接一般可在「我的订阅 / 账户 / 仪表盘」中找到。</li>
+        <li>导入后如节点为空，先在机场后台「重置订阅」再刷新。</li>
+      </ul>
+    </section>
 
     <section id="import" class="card" style="margin-top:18px">
       <div class="kicker">Import</div>
