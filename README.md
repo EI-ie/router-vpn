@@ -97,10 +97,19 @@
 | **USB接口** | 1×USB 3.2 Gen1 + 1×USB 2.0 | 支持外接存储设备 |
 | **价格区间** | 800-1000元 | 性价比极高的高端路由器 |
 
-> **KoolCenter下载**：[RT-AX86U PRO梅林固件](https://www.koolcenter.com/fw/device/rt-ax88u_pro/merlin)
+> **KoolCenter下载**：[RT-AX86U PRO梅林固件](https://www.asusgo.com/firmware/download?devicename=rt-ax86u_pro&firmware=merlin)
 
 > **京东购买推荐**：[京东自营RT-AX86U PRO路由器优惠购买链接](https://union-click.jd.com/jdc?e=618%7Cpc%7C&p=JF8BAS8JK1olXwABU19YDUgeA18IGloUXwAKVFlbC08nRzBQRQQlBENHFRxWFlVPRjtUBABAQlRcCEBdCUoWAWkAG1wTXgIdDRsBVXt_dCR_SBxKLmMDBBgKFk9XfzNvYV9TUQoyVW5eCUsTAWkJHVkTbTYCU24OZhtVRy3RncXD-IbW_MdtCXsXBWsBHlgVWgMCUltVOEwXCl9YQxlMDVlUHRoJOHsnAF8PG1IBW3RDBkpbensnA18LK1sUXQcLVF9eDE8WH28MGVoSVRoCUlpUDUgXB2oOHV8cbQQDVVpUOHvJjt92a1pLHXNiHBs5CElDdwYJxdalTHp1XVxfDFonWChjbD50WQ9YMiEEQC4VRypTGyBDXXJiOlxZC09XVTR7fAFyGVBiVjspSXsSM2gOGms)  
 > 通过此链接购买可支持本项目持续更新，感谢支持！
+
+#### 固件版本信息（RT‑AX86U PRO）
+- 版本通道：A 系列（官改）、M 系列（梅林改版）
+- 最新版本：102.4_0（2025-06-09），MD5：e2c2e89be8f59802a0a67a980b3a0f22
+- 历史版本：
+  - 388.8_4（2024-12-04），MD5：f90dffbc8ad111d041f45d922f8e494e
+  - 388.8_2（2024-10-07），MD5：fb760e1fafa04fe80b30882b948df047
+
+> 注：以上为版本速览，更多版本与更新说明请以下载页为准。
 
 ### 为什么选择RT-AX86U PRO？
 
@@ -127,7 +136,7 @@
 | **USB接口** | USB 3.2 Gen1 | 支持外接存储/下载等扩展场景 |
 | **固件支持** | 支持梅林固件 | 通过KoolCenter获取固件 |
 
-> 固件下载：[KoolCenter RT‑BE86U Merlin](https://www.koolcenter.com/fw/device/rt-be86u/merlin)  
+> 固件下载：[KoolCenter RT‑BE86U Merlin](https://www.asusgo.com/firmware/download?devicename=rt-be86u&firmware=merlin)  
 > 京东购买推荐：[RT‑BE86U 优惠购买链接](https://union-click.jd.com/jdc?e=618%7Cpc%7C&p=JF8BAS8JK1olXwABU19YDUgeA18IGloUVA8KUldaCUsnRzBQRQQlBENHFRxWFlVPRjtUBABAQlRcCEBdCUoWCmYAHVISXAYdDRsBVXtcVAlqbwFdJ2R9VylDARlUZDRJaShDUQoyVW5eCUsTAWkJHVkTbTYCU24OZhtVRy3RncXD-IbW_MdtCXsXBWsBHlgdVAAHUF9eOEwXCl9YQxlMDVlUHRoJOHsnAF8PG1IBW3RDBkpbensnA18LK1sUXQcLVF9eDE8WH28MGVoSVRoCUlpUDUgXB2oOHV8cbQQDVVpUOHvJjt99Hl4QJwZZUFdaWCNICxBSxdalTHRyVFpcDlonVC1hZDB3P1wGAiocUilMBy1YEgxeXQRcOlwZUDMSQWxsRl92BlpKKCwKfHsSM2gOGms)
 
 ### 为什么选择RT-BE86U？
@@ -138,6 +147,15 @@
 4. **稳定低时延**：优化游戏/影音/远程办公的时延与稳定性
 5. **面向未来**：更长期的硬件生命周期，更适合高端/重度用户
 
+
+#### 固件版本信息（RT‑BE86U）
+- 版本通道：A 系列（官改）、M 系列（梅林改版）
+- 最新版本：102.4_0（2025-06-08），MD5：10b719d0f3ef72216b215e9c54d25c16
+- 历史版本：
+  - 102.3_0（2025-01-31），MD5：9eb32d57c4a203bbf4f02f4ea51d6525
+  - 102.2_2（2024-12-05），MD5：6b14ecaa773edc5620a933fe8532c9f3
+
+> 注：以上为版本速览，更多版本与更新说明请以下载页为准。
 
 ## 🔄 梅林固件刷机
 
@@ -177,9 +195,19 @@
 
 
 **固件版本说明：**
-- **梅林386改版固件**：基于华硕官方386固件，功能最全面
-- **梅林384改版固件**：基于华硕官方384固件，稳定性更好
-- **官改固件**：在官方固件基础上增加插件支持
+- **版本通道**
+  - **A 系列（官改）**：官方功能 + 插件支持，版本号形如 `102.x_y` 或 `388.x_y`
+  - **M 系列（梅林改版）**：基于 ASUSWRT‑Merlin，版本节奏与 A 系列不完全同步
+- **版本分支含义**
+  - **102.x_\***：新平台/新内核分支，多见于 Wi‑Fi 7/BE 系列（如 `RT‑BE86U`），也正逐步覆盖部分 AX 机型（如 `RT‑AX86U PRO`）
+  - **388.x_\***：Wi‑Fi 6/AX 系列主线分支（如 `RT‑AX86U PRO` 的梅林分支）
+  - **384/386**：较老分支，仅老机型或历史版本保留
+- **选择建议**
+  - 新机或 BE 系列优先选择 `102.x_*`（如 `102.4_0`）
+  - AX 机型如已有 `102.x_*` 官方/官改可优先；仅梅林分支时选择最新稳定的 `388.x_*`(我选择的388.8_4版本)
+  - 升级前务必备份配置，并核验 MD5
+
+> 完整版本清单与下载请参见对应机型章节与参考资源链接。
 
 ### 3. 刷机步骤
 
@@ -612,6 +640,10 @@ MerlinClash内置DNS泄露防护功能：
 
 ## 📝 版本更新说明
 
+### v2.1 (2025年9月)
+- ✅ 更新 RT‑BE86U 与 RT‑AX86U PRO 固件版本信息（A/M 系列）
+- ✅ 修正参考资源链接，指向正确机型下载页
+
 ### v2.0 (2024年1月)
 - ✅ 添加官方下载链接：[KoolCenter梅林固件](https://www.koolcenter.com/fw/device/rt-ax88u_pro/merlin)
 - ✅ 添加Telegram Clash文件下载：[撸猫云频道](https://t.me/s/merlinclashfile)
@@ -635,12 +667,13 @@ MerlinClash内置DNS泄露防护功能：
 
 ---
 
-**最后更新**: 2024年1月  
-**版本**: v2.0  
+**最后更新**: 2025年9月  
+**版本**: v2.1  
 **作者**: Router VPN Team
 
 ### 参考资源
-- [KoolCenter梅林固件下载](https://www.koolcenter.com/fw/device/rt-ax88u_pro/merlin)
+- [KoolCenter梅林固件下载（RT‑AX86U PRO）](https://www.koolcenter.com/fw/device/rt-ax86u_pro/merlin)
+- [KoolCenter梅林固件下载（RT‑BE86U）](https://www.asusgo.com/firmware/download?devicename=rt-be86u&firmware=merlin)
 - [撸猫云Clash文件频道](https://t.me/s/merlinclashfile)
 - [梅林固件官方GitHub](https://github.com/RMerl/asuswrt-merlin.ng)
 - [Clash官方文档](https://clash.gitbook.io/)
