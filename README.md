@@ -60,8 +60,8 @@
 
 
 #### Clash文件下载
-- **Telegram频道**：[撸猫云Clash文件](https://t.me/s/merlinclashfile)
-- **推荐版本**：MC_ARM64_250124.tar.gz（RT-AX86U PRO专用）
+- **本地下载**：[MC2_0.4.6_ARM64.tar.gz](soft/MC2_0.4.6_ARM64.tar.gz) | [MC2_0.3_ARM64.tar.gz](soft/MC2_0.3_ARM64.tar.gz)
+- **推荐版本**：MC2_0.4.6_ARM64.tar.gz（RT-AX86U PRO推荐）
 
 
 
@@ -189,23 +189,21 @@
 ### 3. 刷机步骤
 
 #### 第一步：进入路由器管理界面
-1. 在浏览器中输入 `http://192.168.1.1` 或 `http://router.asus.com`
-2. 使用管理员账号登录（默认用户名/密码：admin/admin）
+1. 在浏览器中输入 `http://192.168.50.1` 或 `http://router.asus.com`
+2. 使用管理员账号登录（用户名和密码都是自己设置的）
 
 ![路由器登录界面](images/router-login.png)
 
-#### 第二步：备份当前设置
-1. 进入"系统管理" → "设置管理"
-2. 点击"备份"按钮，下载当前配置
-3. 保存配置文件到安全位置
+#### 第二步：固件双清（如果是新路由器不需要）
+1. 进入【系统管理 】
+2.【 恢复/导出/上传设置】，勾选恢复按钮旁的选择框，然后点击恢复按钮
 
-![设置备份界面](images/backup-settings.png)
+![固件双清界面](images/backup-settings.png)
 
 #### 第三步：上传梅林固件
 1. 进入"系统管理" → "固件升级"
 2. 点击"选择文件"，选择下载的梅林固件
-3. 确保"恢复出厂设置"选项已勾选
-4. 点击"上传"开始刷机
+3. 点击"上传"开始刷机
 
 ![固件升级界面](images/firmware-upload.png)
 
@@ -216,13 +214,6 @@
 
 ![刷机进度](images/flash-progress.png)
 
-#### 第五步：双清恢复出厂设置（推荐）
-刷机完成后，建议进行双清恢复出厂设置：
-1. 按住路由器背面的"Reset"按钮10秒
-2. 等待路由器重启完成
-3. 重新配置网络设置
-
-![恢复出厂设置](images/factory-reset.png)
 
 ### 4. 验证刷机成功
 
@@ -236,7 +227,7 @@
 #### 检查软件中心
 梅林固件新增的功能包括：
 - 软件中心（Software Center）
-- 更多网络工具
+- 络更多网工具
 - 高级网络设置
 - 自定义脚本支持
 
@@ -258,19 +249,45 @@
 - **图形界面**: 提供Web管理界面，操作简单
 
 ### 2. 下载MerlinClash插件
-
-#### 通过Telegram频道下载
-1. 访问[撸猫云Clash文件频道](https://t.me/s/merlinclashfile)
+————————————————————————————————————————————————
+【MerlinClash禁止转发国内网站】,这是官方版权声明，请自觉遵守
+————————————————————————————————————————————————
+#### 从本项目 soft 目录下载
+1. 打开本仓库的 `soft` 目录
 2. 根据您的路由器型号选择对应版本：
-   - **RT-AX86U PRO**: 下载 `MC_ARM64_250124.tar.gz` 或最新版本
-   - **其他ARM64路由器**: 下载 `MC2_0.5.1_ARM64.tar.gz`
-   - **ARM32路由器**: 下载 `MC2_0.5.1_ARM32.tar.gz`
-
-![Telegram Clash下载页面](images/telegram-clash-download.png)
+   - **RT-AX86U PRO 等 ARM64 路由器**：下载 [MC2_0.4.6_ARM64.tar.gz](soft/MC2_0.4.6_ARM64.tar.gz)（推荐）或 [MC2_0.3_ARM64.tar.gz](soft/MC2_0.3_ARM64.tar.gz)
+   - 梅林Clash也可以通过 [Telegram下载频道](https://t.me/s/merlinclashfile) 获取最新版本（需有Telegram账号）
 
 **支持的华硕路由器型号：**
-- **ARM64版本**：RT-AX86U PRO、RT-AX88U、RT-AX68U、RT-AC86U等
-- **ARM32版本**：RT-AX3000、RT-AX5400、RT-AX56U等
+
+- **ARM64版本 MC2_0.3**：
+  支持
+  - BE6500
+  - BE88U/BE86U/BE96U/BE3600
+  - AC86U/GT5300
+  - AX68U/AX86U/AX88U/AX92U/AX11000
+  - AX11000 pro/AX86U pro/AX88U pro/GT-AX6000
+  - TX-AX6000/TUF-AX4200q/GS7
+  - RAX80 等
+
+- **ARM64版本 MC2_0.4.6**：
+  支持
+  - BE6500
+  - BE88U/BE86U/BE96U/BE3600
+  - AC86U/GT5300
+  - AX68U/AX86U/AX88U/AX92U/AX11000
+  - AX11000 pro/AX86U pro/AX88U pro/GT-AX6000
+  - TX-AX6000/TUF-AX4200q/GS7
+  - RAX80 等
+
+- **ARM32版本 MC2_0.4.6**：
+  支持
+  - BD4
+  - AX3000/AX5400/AX6600/GT6
+  - AX82U/AX56U/AX58U/AX1800
+  - AX89X
+  - RAX50 等
+
 
 ### 3. 安装MerlinClash插件
 
@@ -307,6 +324,11 @@
    - **DNS设置**: 使用默认DNS配置
 
 ![基本配置界面](images/basic-config.png)
+
+#### 申请clash订阅
+
+查看教程：[申请 Clash 订阅指南（扬帆云 / 大哥云 / 三番云，炫酷版）](html/clash-subscription-guide.html)
+
 
 #### 订阅配置
 1. 点击"订阅设置"
