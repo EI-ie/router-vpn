@@ -327,7 +327,7 @@
 
 #### 申请clash订阅
 
-查看教程：[申请 Clash 订阅指南（扬帆云 / 大哥云 / 三番云，炫酷版）](html/clash-subscription-guide.html)
+查看教程：[申请 Clash 订阅指南](https://mowei0107-ie.github.io/router-vpn/clash-subscription-guide.html)
 
 
 #### 订阅配置
