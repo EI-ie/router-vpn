@@ -59,18 +59,6 @@
 - 稳定的网络连接
 - VPN服务商账号（可选）
 
-### 下载链接汇总
-
-#### 梅林固件下载
-- **KoolCenter下载**：[RT-AX86U PRO梅林固件](https://www.koolcenter.com/fw/device/rt-ax88u_pro/merlin)
-- **KoolCenter下载**：[RT-BE86U梅林固件](https://www.koolcenter.com/fw/device/rt-be86u/merlin)
-
-
-#### Clash文件下载
-- **本地下载**：[MC2_0.4.6_ARM64.tar.gz](soft/MC2_0.4.6_ARM64.tar.gz) | [MC2_0.3_ARM64.tar.gz](soft/MC2_0.3_ARM64.tar.gz)
-- **推荐版本**：MC2_0.4.6_ARM64.tar.gz（RT-AX86U PRO推荐）
-
-
 
 ## 🔧 硬件准备
 
@@ -108,6 +96,7 @@
 | **有线接口** | 1×2.5G (WAN/LAN) + 1×1G WAN + 4×1G LAN | 高速网络连接 |
 | **USB接口** | 1×USB 3.2 Gen1 + 1×USB 2.0 | 支持外接存储设备 |
 | **价格区间** | 800-1000元 | 性价比极高的高端路由器 |
+> **KoolCenter下载**：[RT-AX86U PRO梅林固件](https://www.koolcenter.com/fw/device/rt-ax88u_pro/merlin)
 > **京东购买推荐**：[京东自营RT-AX86U PRO路由器优惠购买链接](https://union-click.jd.com/jdc?e=618%7Cpc%7C&p=JF8BAS8JK1olXwABU19YDUgeA18IGloUXwAKVFlbC08nRzBQRQQlBENHFRxWFlVPRjtUBABAQlRcCEBdCUoWAWkAG1wTXgIdDRsBVXt_dCR_SBxKLmMDBBgKFk9XfzNvYV9TUQoyVW5eCUsTAWkJHVkTbTYCU24OZhtVRy3RncXD-IbW_MdtCXsXBWsBHlgVWgMCUltVOEwXCl9YQxlMDVlUHRoJOHsnAF8PG1IBW3RDBkpbensnA18LK1sUXQcLVF9eDE8WH28MGVoSVRoCUlpUDUgXB2oOHV8cbQQDVVpUOHvJjt92a1pLHXNiHBs5CElDdwYJxdalTHp1XVxfDFonWChjbD50WQ9YMiEEQC4VRypTGyBDXXJiOlxZC09XVTR7fAFyGVBiVjspSXsSM2gOGms)  
 > 通过此链接购买可支持本项目持续更新，感谢支持！
 
@@ -182,11 +171,8 @@
 #### 下载梅林固件
 
 **通过KoolCenter下载（推荐）**
-1. 访问[KoolCenter梅林固件下载页面](https://www.koolcenter.com/fw/device/rt-ax88u_pro/merlin)
-2. 选择RT-AX86U PRO对应的固件版本
-3. 下载最新的稳定版本固件文件（.trx格式）
+下载链接位于设备说明的下方
 
-![KoolCenter固件下载页面](images/koolcenter-download.png)
 
 **固件版本说明：**
 - **梅林386改版固件**：基于华硕官方386固件，功能最全面
