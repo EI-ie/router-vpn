@@ -55,6 +55,7 @@
 
 #### 梅林固件下载
 - **KoolCenter下载**：[RT-AX86U PRO梅林固件](https://www.koolcenter.com/fw/device/rt-ax88u_pro/merlin)
+- **KoolCenter下载**：[RT-BE86U梅林固件](https://www.koolcenter.com/fw/device/rt-be86u/merlin)
 
 
 #### Clash文件下载
@@ -70,11 +71,13 @@
 
 | 品牌 | 型号 | CPU | 内存 | 存储 | 价格区间 | 推荐指数 | 备注 |
 |------|------|-----|------|------|----------|----------|------|
-| 华硕 | RT-AX86U PRO | 博通四核1.8GHz | 1GB | 256MB | 800-1000元 | ⭐⭐⭐⭐⭐ | **推荐首选** |
+| 华硕 | RT-AX86U PRO | 博通四核2.0GHz | 1GB | 256MB | 800-1000元 | ⭐⭐⭐⭐⭐ | **推荐首选** |
 | 华硕 | RT-AX88U | 博通四核1.8GHz | 1GB | 256MB | 1200-1500元 | ⭐⭐⭐⭐⭐ | 8个LAN口 |
 | 华硕 | RT-AC86U | 博通双核1.8GHz | 512MB | 128MB | 400-600元 | ⭐⭐⭐⭐ | 性价比之选 |
 | 小米 | AX6000 | IPQ5018 | 512MB | 128MB | 400-500元 | ⭐⭐⭐⭐ | 需刷OpenWrt |
 | 网件 | R7800 | IPQ8065 | 512MB | 128MB | 300-400元 | ⭐⭐⭐⭐ | 需刷OpenWrt |
+
+
 
 ### 最低配置要求
 
@@ -90,23 +93,52 @@
 
 | 规格项目 | 详细参数 | 说明 |
 |---------|---------|------|
-| **处理器** | 博通四核1.8GHz | 强大的处理性能，支持高并发连接 |
+| **处理器** | 博通四核2.0GHz | 强大的处理性能，支持高并发连接 |
 | **内存** | 1GB DDR4 | 充足内存支持Clash运行 |
 | **存储** | 256MB Flash | 大容量存储，支持安装更多插件 |
-| **无线性能** | Wi-Fi 6 (802.11ax) | 双频并发5700Mbps |
-| **有线接口** | 1×2.5G WAN + 4×1G LAN | 高速网络连接 |
-| **USB接口** | 2×USB 3.0 | 支持外接存储设备 |
+| **无线性能** | Wi-Fi 6 (802.11ax)，160MHz | 双频并发5700Mbps |
+| **有线接口** | 1×2.5G (WAN/LAN) + 1×1G WAN + 4×1G LAN | 高速网络连接 |
+| **USB接口** | 1×USB 3.2 Gen1 + 1×USB 2.0 | 支持外接存储设备 |
 | **价格区间** | 800-1000元 | 性价比极高的高端路由器 |
 > **京东购买推荐**：[京东自营RT-AX86U PRO路由器优惠购买链接](https://union-click.jd.com/jdc?e=618%7Cpc%7C&p=JF8BAS8JK1olXwABU19YDUgeA18IGloUXwAKVFlbC08nRzBQRQQlBENHFRxWFlVPRjtUBABAQlRcCEBdCUoWAWkAG1wTXgIdDRsBVXt_dCR_SBxKLmMDBBgKFk9XfzNvYV9TUQoyVW5eCUsTAWkJHVkTbTYCU24OZhtVRy3RncXD-IbW_MdtCXsXBWsBHlgVWgMCUltVOEwXCl9YQxlMDVlUHRoJOHsnAF8PG1IBW3RDBkpbensnA18LK1sUXQcLVF9eDE8WH28MGVoSVRoCUlpUDUgXB2oOHV8cbQQDVVpUOHvJjt92a1pLHXNiHBs5CElDdwYJxdalTHp1XVxfDFonWChjbD50WQ9YMiEEQC4VRypTGyBDXXJiOlxZC09XVTR7fAFyGVBiVjspSXsSM2gOGms)  
 > 通过此链接购买可支持本项目持续更新，感谢支持！
 
 ### 为什么选择RT-AX86U PRO？
 
-1. **性能强劲**：四核1.8GHz处理器，1GB内存，运行Clash毫无压力
+1. **性能强劲**：四核2.0GHz处理器，1GB内存，运行Clash毫无压力
 2. **梅林固件支持**：完美支持第三方梅林固件，功能丰富
 3. **稳定性好**：华硕品质保证，长期运行稳定
 4. **扩展性强**：支持多种插件和自定义功能
 5. **性价比高**：相比其他品牌同配置产品价格更实惠
+
+#### 华硕RT-BE86U 高端旗舰推荐
+
+- 定位：Wi‑Fi 7 高端旗舰，面向高端与多设备并发场景
+
+
+### 华硕RT-BE86U 详细规格
+
+| 规格项目 | 详细参数 | 说明 |
+|---------|---------|------|
+| **处理器** | 博通高性能平台 | 面向Wi‑Fi 7的高并发、多客户端场景 |
+| **内存** | 1GB+ DDR4 | 充足内存，适配多插件与并发连接 |
+| **存储** | 256MB+ Flash | 可用于安装软件中心与扩展插件 |
+| **无线性能** | Wi‑Fi 7 (802.11be) | 更高吞吐、更低时延、更强抗干扰 |
+| **有线接口** | 2.5G高速口 + 多口千兆LAN | 满足多千兆宽带/NAS内网高速需求 |
+| **USB接口** | USB 3.2 Gen1 | 支持外接存储/下载等扩展场景 |
+| **固件支持** | 支持梅林固件 | 通过KoolCenter获取固件 |
+
+> 固件下载：[KoolCenter RT‑BE86U Merlin](https://www.koolcenter.com/fw/device/rt-be86u/merlin)  
+> 京东购买推荐：[RT‑BE86U 优惠购买链接](https://union-click.jd.com/jdc?e=618%7Cpc%7C&p=JF8BAS8JK1olXwABU19YDUgeA18IGloUVA8KUldaCUsnRzBQRQQlBENHFRxWFlVPRjtUBABAQlRcCEBdCUoWCmYAHVISXAYdDRsBVXtcVAlqbwFdJ2R9VylDARlUZDRJaShDUQoyVW5eCUsTAWkJHVkTbTYCU24OZhtVRy3RncXD-IbW_MdtCXsXBWsBHlgdVAAHUF9eOEwXCl9YQxlMDVlUHRoJOHsnAF8PG1IBW3RDBkpbensnA18LK1sUXQcLVF9eDE8WH28MGVoSVRoCUlpUDUgXB2oOHV8cbQQDVVpUOHvJjt99Hl4QJwZZUFdaWCNICxBSxdalTHRyVFpcDlonVC1hZDB3P1wGAiocUilMBy1YEgxeXQRcOlwZUDMSQWxsRl92BlpKKCwKfHsSM2gOGms)
+
+### 为什么选择RT-BE86U？
+
+1. **前沿无线**：Wi‑Fi 7标准，显著提升吞吐与并发表现
+2. **高速有线**：提供2.5G高速口，适配多千兆与NAS应用
+3. **梅林生态**：支持梅林固件，软件中心与插件扩展丰富
+4. **稳定低时延**：优化游戏/影音/远程办公的时延与稳定性
+5. **面向未来**：更长期的硬件生命周期，更适合高端/重度用户
+
 
 ## 🔄 梅林固件刷机
 
@@ -504,7 +536,7 @@ MerlinClash内置DNS泄露防护功能：
 ### 1. 支持的路由器型号
 
 #### ARM64版本（推荐）
-- RT-AX86U PRO、RT-AX88U、RT-AX68U
+- RT-AX86U PRO、RT-AX88U、RT-AX68U、RT-BE86U
 - RT-AC86U、RT-AC88U、RT-AC68U
 - TUF-AX3000、TUF-AX5400
 - GT-AX6000、GT-AX11000
