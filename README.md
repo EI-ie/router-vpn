@@ -262,7 +262,7 @@
 #### 从本项目 soft 目录下载
 1. 打开本仓库的 `soft` 目录
 2. 根据您的路由器型号选择对应版本：
-   - **RT-AX86U PRO 等 ARM64 路由器**：下载 [MC2_0.4.6_ARM64.tar.gz](soft/MC2_0.4.6_ARM64.tar.gz)（推荐）或 [MC2_0.3_ARM64.tar.gz](soft/MC2_0.3_ARM64.tar.gz)
+   - **RT-AX86U PRO 等 ARM64 路由器**：下载 [MC2_0.4.6_ARM64.tar.gz](https://mowei-ie.github.io/router-vpn/MC2_0.4.6_ARM64.tar.gz)（推荐）或 [MC2_0.3_ARM64.tar.gz](https://mowei-ie.github.io/router-vpn/MC2_0.3_ARM64.tar.gz)
    - 梅林Clash也可以通过 [Telegram下载频道](https://t.me/s/merlinclashfile) 获取最新版本（需有Telegram账号）
 
 **支持的华硕路由器型号：**
