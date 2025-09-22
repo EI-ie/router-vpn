@@ -69,10 +69,9 @@
 | 华硕 | RT-AX86U PRO | 博通四核2.0GHz | 1GB | 256MB | 900-1200元 | ⭐⭐⭐⭐⭐ | **推荐首选** |
 | 华硕 | RT-BE86U | 博通四核2.6GHz | 2GB | 256MB | 2500-3000元 | ⭐⭐⭐⭐⭐ | Wi-Fi 7旗舰，极致性能 |
 | 华硕 | RT-AX88U | 博通四核1.8GHz | 1GB | 256MB | 1200-1500元 | ⭐⭐⭐⭐⭐ | 8个LAN口 |
-| 华硕 | RT-AC86U | 博通双核1.8GHz | 512MB | 128MB | 400-600元 | ⭐⭐⭐⭐ | 性价比之选 |
+| 华硕 | RT-AC86U | 博通双核1.8GHz | 512MB | 128MB | 400-600元 | ⭐⭐⭐⭐ | **入门级推荐，性价比之选** |
 | 小米 | AX6000 | IPQ5018 | 512MB | 128MB | 400-500元 | ⭐⭐⭐⭐ | 需刷OpenWrt |
 | 网件 | R7800 | IPQ8065 | 512MB | 128MB | 300-400元 | ⭐⭐⭐⭐ | 需刷OpenWrt |
-
 
 ### 最低配置要求
 
@@ -81,6 +80,32 @@
 - **存储**: 128MB Flash 或更多（推荐256MB+）
 - **网络**: 千兆以太网接口
 - **固件支持**: 支持第三方固件（梅林/OpenWrt）
+
+### 华硕RT-AC86U 入门级推荐
+
+![华硕RT-AC86U](images/asus-rt-ac86u.png)
+
+| 规格项目 | 详细参数 | 说明 |
+|---------|---------|------|
+| **处理器** | 博通双核1.8GHz | 满足日常上网与轻度并发代理 |
+| **内存** | 512MB | 入门配置，可运行MerlinClash |
+| **存储** | 128MB Flash | 支持软件中心与常用插件 |
+| **无线性能** | Wi‑Fi 5 (802.11ac)，AC2900 | 双频并发，覆盖中小户型 |
+| **有线接口** | 1×1G WAN + 4×1G LAN | 适配千兆入户与NAS基础需求 |
+| **USB接口** | 1×USB 3.0 + 1×USB 2.0 | 外接存储/下载等扩展 |
+| **价格区间** | 400-600元 | 入门级高性价比 |
+
+> **KoolCenter下载**：[RT‑AC86U 梅林固件](https://www.asusgo.com/firmware/download?devicename=rt-ac86u&firmware=merlin)
+
+> 京东购买推荐：[RT‑AC86U 优惠购买链接](https://union-click.jd.com/jdc?e=618%7Cpc%7C&p=JF8BAS4JK1olXwQKU1ZVD00XA18IGlsWWgYGVVlbDUkWAF9MRANLAjZbERscSkAJHTdNTwcKBlMdBgABFksWA2wPG18UWgAHVl9eFxJSXzI4WRkLFFlDDRs-DT1qZDV4chxmHntANFJROEonAG4IH1kTXAAAUm5tCEwnQgEIHl4VXA4LVm5cOEsRB2YMG10QVAMKVFhtD0seMz9QWQJFAlBLEAptOHsUM2gIEk8TL0dQQFgvOHsXM2w4G1oVXA8CVV1bCUsLA2oLG1oUQQYEUFdZCEwQB2sJElIlXwcDUFdtOJWZlwx8YRpdKWNeLwE_YDl-exfWlc8EIXEAVlZcGXtSVxVLTFpHLwZQXFlfATF1dzlBYwFhO3hsVgcGCjZTdWhxG1JJJgB4LxceOE4nBGkJKw)
+
+### 为什么选择RT-AC86U？
+
+1. 性价比高：同价位硬件规格领先，二手保有量大
+2. 生态成熟：梅林固件与MerlinClash支持完善，资料充足
+3. 部署简便：通过简单部署即可实现全屋代理
+4. 适用场景：入门/中小户型、300‑500M 宽带更合适
+
 
 ### 华硕RT-AX86U PRO 详细规格
 
@@ -94,7 +119,7 @@
 | **无线性能** | Wi-Fi 6 (802.11ax)，160MHz | 双频并发5700Mbps |
 | **有线接口** | 1×2.5G (WAN/LAN) + 1×1G WAN + 4×1G LAN | 高速网络连接 |
 | **USB接口** | 1×USB 3.2 Gen1 + 1×USB 2.0 | 支持外接存储设备 |
-| **价格区间** | 800-1000元 | 性价比极高的高端路由器 |
+| **价格区间** | 900-1200元 | 性价比极高的高端路由器 |
 
 > **KoolCenter下载**：[RT-AX86U PRO梅林固件](https://www.asusgo.com/firmware/download?devicename=rt-ax86u_pro&firmware=merlin)
 
